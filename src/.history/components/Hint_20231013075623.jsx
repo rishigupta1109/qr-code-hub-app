@@ -3,14 +3,14 @@ import logotext from ".././Images/InventoTextresp.png";
 
 const Hint = ({ hint, password }) => {
   return (
-    <div className="min-h-screen md:p-16 flex-col pt-6 px-3">
+    <div className="min-h-screen p-16 flex-col">
       <div className="flex justify-center">
-        <img src={logotext} className="w-[350px] md:w-auto md:h-auto" />
+        <img src={logotext} className="xs:w-[200px] w-auto h-auto" />
       </div>
       <div
-        className="flex flex-col gap-6 mt-6 min-h-[60vh] justify-center"
+        className="flex flex-col gap-6 justify-start items-center"
         style={{
-          // height: "100%",
+          height: "100%",
           width: "100%",
           borderRadius: "20px",
           padding: "2rem",
@@ -19,15 +19,14 @@ const Hint = ({ hint, password }) => {
           backdropFilter: "blur(10px)",
         }}
       >
-        <div className="flex flex-row justify-start items-center gap-4">
+        <div className="flex flex-row justify-center items-center gap-4">
         <h1
-          className="font-bold text-white md:text-5xl text-2xl flex"
-          // style={{
-            // fontSize: "2rem",
-            // fontWeight: "bold",
-            // color: "white",
-            // textAlign: "center",
-          // }}
+          style={{
+            fontSize: "2rem",
+            fontWeight: "bold",
+            color: "white",
+            textAlign: "center",
+          }}
         >
           Hint :
         </h1>
@@ -48,13 +47,12 @@ const Hint = ({ hint, password }) => {
           }}
         >
           <span
-            className="font-bold text-white md:text-5xl text-2xl flex"
-            // style={{
-              // fontSize: "2rem",
-              // color: "white",
-              // textAlign: "center",
-              // fontWeight: "bold",
-            // }}
+            style={{
+              fontSize: "2rem",
+              color: "white",
+              textAlign: "center",
+              fontWeight: "bold",
+            }}
           >
             Password for next QR :{" "}
           </span>

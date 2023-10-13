@@ -62,11 +62,10 @@ const QRPage = () => {
   const navigate = useNavigate();
   console.log(param);
   const qr = paramToQR[param];
-  if (qr === undefined) {
-    navigate("/");
-    console.log(qr);
-    return null;
+  if (qr == undefined) {
+    navigate("/home");
   }
+  console.log(qr);
   let set = parseInt(qr[2]);
   let qrNum = parseInt(qr[3]);
   const clickHandler = () => {

@@ -63,7 +63,7 @@ const QRPage = () => {
   console.log(param);
   const qr = paramToQR[param];
   if (qr === undefined) {
-    navigate("/");
+    navigate("/home");
     console.log(qr);
     return null;
   }

@@ -62,11 +62,10 @@ const QRPage = () => {
   const navigate = useNavigate();
   console.log(param);
   const qr = paramToQR[param];
-  if (qr === undefined) {
-    navigate("/");
-    console.log(qr);
-    return null;
+  if (qr == undefined) {
+    navigate("/home");
   }
+  console.log(qr);
   let set = parseInt(qr[2]);
   let qrNum = parseInt(qr[3]);
   const clickHandler = () => {
@@ -93,7 +92,7 @@ const QRPage = () => {
       return;
     }
     if (passwords[idx][qrNum] === password) {
-      // alert("correct");
+      alert("correct");
       setShowHint(true);
     } else {
       alert("Wrong password");
@@ -109,7 +108,7 @@ const QRPage = () => {
       <div>
         <img src={logotext} className="h-[150px]"/>
       </div>
-      <p className="text-white mb-4 md:mb-10 md:text-2xl">PRESENTS</p>
+      <p className="text-white mb-10 md:text-2xl">PRESENTS</p>
       <div
         style={{
           backgroundColor: "transparent",

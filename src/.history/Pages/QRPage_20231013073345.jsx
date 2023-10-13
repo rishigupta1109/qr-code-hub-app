@@ -62,20 +62,19 @@ const QRPage = () => {
   const navigate = useNavigate();
   console.log(param);
   const qr = paramToQR[param];
-  if (qr === undefined) {
-    navigate("/");
-    console.log(qr);
-    return null;
+  if (qr == undefined) {
+    navigate("/home");
   }
+  console.log(qr);
   let set = parseInt(qr[2]);
   let qrNum = parseInt(qr[3]);
   const clickHandler = () => {
     if (teamId === "" || password === "") {
-      alert("Please enter Team Id and Password");
+      alert("Please enter teamid and password");
       return;
     }
     if (teamId.length !== 4) {
-      alert("Invalid team Id : Length is not 4");
+      alert("Invalid team id length is not 4");
       return;
     }
     if (password.length !== 6) {
@@ -83,7 +82,7 @@ const QRPage = () => {
       return;
     }
     if (parseInt(teamId) >= 1061 || parseInt(teamId) <= 1000) {
-      alert("Invalid Team Id : Does not exist");
+      alert("Invalid team id not exists");
       return;
     }
 
@@ -93,7 +92,7 @@ const QRPage = () => {
       return;
     }
     if (passwords[idx][qrNum] === password) {
-      // alert("correct");
+      alert("correct");
       setShowHint(true);
     } else {
       alert("Wrong password");
@@ -107,9 +106,9 @@ const QRPage = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <div>
-        <img src={logotext} className="h-[150px]"/>
+        <img src={logotext} className=""/>
       </div>
-      <p className="text-white mb-4 md:mb-10 md:text-2xl">PRESENTS</p>
+      <p className="text-white mb-10 md:text-2xl">PRESENTS</p>
       <div
         style={{
           backgroundColor: "transparent",
@@ -152,7 +151,7 @@ const QRPage = () => {
             // }}
           >
             <label
-              className="text-white flex items-center justify-center"
+              className="text-white items-center justify-center"
               style={{
                 fontSize: "1.5rem",
               }}
@@ -182,7 +181,7 @@ const QRPage = () => {
             // }}
           >
             <label
-              className="text-white flex justify-center items-center"
+              className="text-white"
               style={{
                 fontSize: "1.5rem",
               }}

@@ -8,7 +8,7 @@ const Hint = ({ hint, password }) => {
         <img src={logotext} className="w-[350px] md:w-auto md:h-auto" />
       </div>
       <div
-        className="flex flex-col gap-6 mt-6 min-h-[60vh] justify-center"
+        className="flex flex-col gap-6 mt-6 min-h-[60vh] items-center justify"
         style={{
           // height: "100%",
           width: "100%",

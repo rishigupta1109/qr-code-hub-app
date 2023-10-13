@@ -3,7 +3,6 @@ import image from "../Images/QR.png";
 import { useNavigate, useParams } from "react-router-dom";
 import "./QRPageCSS.css";
 import Hint from "../components/Hint";
-import logotext from ".././Images/InventoTextresp.png";
 //put passwords here passwords[set][qrNum]
 const passwords = [
   ["111111", "222222", "333333", "444444", "-1"],
@@ -62,20 +61,19 @@ const QRPage = () => {
   const navigate = useNavigate();
   console.log(param);
   const qr = paramToQR[param];
-  if (qr === undefined) {
-    navigate("/");
-    console.log(qr);
-    return null;
+  if (qr == undefined) {
+    navigate("/home");
   }
+  console.log(qr);
   let set = parseInt(qr[2]);
   let qrNum = parseInt(qr[3]);
   const clickHandler = () => {
     if (teamId === "" || password === "") {
-      alert("Please enter Team Id and Password");
+      alert("Please enter teamid and password");
       return;
     }
     if (teamId.length !== 4) {
-      alert("Invalid team Id : Length is not 4");
+      alert("Invalid team id length is not 4");
       return;
     }
     if (password.length !== 6) {
@@ -83,7 +81,7 @@ const QRPage = () => {
       return;
     }
     if (parseInt(teamId) >= 1061 || parseInt(teamId) <= 1000) {
-      alert("Invalid Team Id : Does not exist");
+      alert("Invalid team id not exists");
       return;
     }
 
@@ -93,7 +91,7 @@ const QRPage = () => {
       return;
     }
     if (passwords[idx][qrNum] === password) {
-      // alert("correct");
+      alert("correct");
       setShowHint(true);
     } else {
       alert("Wrong password");
@@ -106,10 +104,6 @@ const QRPage = () => {
   }
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
-      <div>
-        <img src={logotext} className="h-[150px]"/>
-      </div>
-      <p className="text-white mb-4 md:mb-10 md:text-2xl">PRESENTS</p>
       <div
         style={{
           backgroundColor: "transparent",
@@ -152,7 +146,7 @@ const QRPage = () => {
             // }}
           >
             <label
-              className="text-white flex items-center justify-center"
+              className="text-white"
               style={{
                 fontSize: "1.5rem",
               }}
@@ -182,7 +176,7 @@ const QRPage = () => {
             // }}
           >
             <label
-              className="text-white flex justify-center items-center"
+              className="text-white"
               style={{
                 fontSize: "1.5rem",
               }}
@@ -205,7 +199,7 @@ const QRPage = () => {
           </span>
 
           <button
-            className="flex justify-center mt-4 md:mt-0 items-center hover:scale-110 hover:text-white duration-300 ease-in-out border-[1px] w-[100px] sm:w-full border-white text-white hover:bg-white hover:text-black rounded-lg px-4 lg:px-[10px] lg:py-[20px]"
+            className="flex justify-center items-center hover:scale-110 hover:text-white duration-300 ease-in-out border-[1px] w-[100px] md:w-full border-white text-white hover:bg-white hover:text-black rounded-lg px-4 lg:px-[10px] lg:py-[20px]"
             style={{
               // fontSize: "1.5rem",
               // padding: "10px 20px",

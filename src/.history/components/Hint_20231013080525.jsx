@@ -3,14 +3,14 @@ import logotext from ".././Images/InventoTextresp.png";
 
 const Hint = ({ hint, password }) => {
   return (
-    <div className="min-h-screen md:p-16 flex-col pt-6 px-3">
+    <div className="min-h-screen md:p-16 flex-col pt-6">
       <div className="flex justify-center">
         <img src={logotext} className="w-[350px] md:w-auto md:h-auto" />
       </div>
       <div
-        className="flex flex-col gap-6 mt-6 min-h-[60vh] justify-center"
+        className="flex flex-col gap-6 mt-6 items-center h-[100%] w-[100%]"
         style={{
-          // height: "100%",
+          height: "100%",
           width: "100%",
           borderRadius: "20px",
           padding: "2rem",
@@ -21,7 +21,7 @@ const Hint = ({ hint, password }) => {
       >
         <div className="flex flex-row justify-start items-center gap-4">
         <h1
-          className="font-bold text-white md:text-5xl text-2xl flex"
+          className="font-bold text-white md:text-3xl text-2xl flex "
           // style={{
             // fontSize: "2rem",
             // fontWeight: "bold",
@@ -48,13 +48,12 @@ const Hint = ({ hint, password }) => {
           }}
         >
           <span
-            className="font-bold text-white md:text-5xl text-2xl flex"
-            // style={{
-              // fontSize: "2rem",
-              // color: "white",
-              // textAlign: "center",
-              // fontWeight: "bold",
-            // }}
+            style={{
+              fontSize: "2rem",
+              color: "white",
+              textAlign: "center",
+              fontWeight: "bold",
+            }}
           >
             Password for next QR :{" "}
           </span>

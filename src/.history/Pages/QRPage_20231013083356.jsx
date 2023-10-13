@@ -64,9 +64,8 @@ const QRPage = () => {
   const qr = paramToQR[param];
   if (qr === undefined) {
     navigate("/");
-    console.log(qr);
-    return null;
   }
+  console.log(qr);
   let set = parseInt(qr[2]);
   let qrNum = parseInt(qr[3]);
   const clickHandler = () => {

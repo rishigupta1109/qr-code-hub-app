@@ -3,7 +3,6 @@ import image from "../Images/QR.png";
 import { useNavigate, useParams } from "react-router-dom";
 import "./QRPageCSS.css";
 import Hint from "../components/Hint";
-import logotext from ".././Images/InventoTextresp.png";
 //put passwords here passwords[set][qrNum]
 const passwords = [
   ["111111", "222222", "333333", "444444", "-1"],
@@ -62,20 +61,19 @@ const QRPage = () => {
   const navigate = useNavigate();
   console.log(param);
   const qr = paramToQR[param];
-  if (qr === undefined) {
-    navigate("/");
-    console.log(qr);
-    return null;
+  if (qr == undefined) {
+    navigate("/home");
   }
+  console.log(qr);
   let set = parseInt(qr[2]);
   let qrNum = parseInt(qr[3]);
   const clickHandler = () => {
     if (teamId === "" || password === "") {
-      alert("Please enter Team Id and Password");
+      alert("Please enter teamid and password");
       return;
     }
     if (teamId.length !== 4) {
-      alert("Invalid team Id : Length is not 4");
+      alert("Invalid team id length is not 4");
       return;
     }
     if (password.length !== 6) {
@@ -83,7 +81,7 @@ const QRPage = () => {
       return;
     }
     if (parseInt(teamId) >= 1061 || parseInt(teamId) <= 1000) {
-      alert("Invalid Team Id : Does not exist");
+      alert("Invalid team id not exists");
       return;
     }
 
@@ -93,7 +91,7 @@ const QRPage = () => {
       return;
     }
     if (passwords[idx][qrNum] === password) {
-      // alert("correct");
+      alert("correct");
       setShowHint(true);
     } else {
       alert("Wrong password");
@@ -106,10 +104,6 @@ const QRPage = () => {
   }
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
-      <div>
-        <img src={logotext} className="h-[150px]"/>
-      </div>
-      <p className="text-white mb-4 md:mb-10 md:text-2xl">PRESENTS</p>
       <div
         style={{
           backgroundColor: "transparent",
@@ -123,36 +117,36 @@ const QRPage = () => {
           alt="qr-image"
           className="h-[300px] w-auto max-w-[100%]"
           // style={{
-          // height: "300px",
-          // width: "auto",
-          // maxWidth: "100%",
+            // height: "300px",
+            // width: "auto",
+            // maxWidth: "100%",
           // }}
         />
         <h1
           className="text-white text-2xl font-bold text-center"
           // style={{
-          // color: "white",
-          // fontSize: "2rem",
-          // fontWeight: "bold",
-          // textAlign: "center",
+            // color: "white",
+            // fontSize: "2rem",
+            // fontWeight: "bold",
+            // textAlign: "center",
           // }}
         >
           QR Hunt
         </h1>
       </div>
-      <div className="flex flex-col lg:py-6 py-4 justify-center">
-        <div className="flex flex-col justify-center gap-4 lg:gap-8 items-center">
+      <div className="flex flex-col lg:py-6 py-4">
+        <div className="flex flex-col gap-4 lg:gap-8">
           <span
             className="sm: lg:w-full flex justify-between lg:gap-12 gap-2 px-4"
             // style={{
-            // width: "100%",
-            // display: "flex",
-            // justifyContent: "space-between",
-            // gap: "3rem",
+              // width: "100%",
+              // display: "flex",
+              // justifyContent: "space-between",
+              // gap: "3rem",
             // }}
           >
             <label
-              className="text-white flex items-center justify-center"
+              className="text-white"
               style={{
                 fontSize: "1.5rem",
               }}
@@ -160,13 +154,12 @@ const QRPage = () => {
               Enter Team ID
             </label>
             <input
-              className=" text-xs lg:text-lg px-4 lg:px-[10px] lg:py-[20px] rounded-lg"
-              // style={{
-              // outline: "none",
-              // fontSize: "16px",
-              // padding: "10px 20px",
-              // borderRadius: "10px",
-              // }}
+              style={{
+                outline: "none",
+                fontSize: "16px",
+                padding: "10px 20px",
+                borderRadius: "10px",
+              }}
               placeholder="Team ID"
               onChange={(e) => {
                 setTeamId(e.target.value);
@@ -174,30 +167,28 @@ const QRPage = () => {
             />
           </span>
           <span
-            className="lg:w-full flex justify-between lg:gap-12 gap-10 px-4"
-            // style={{
-            // width: "100%",
-            // display: "flex",
-            // justifyContent: "space-between",
-            // }}
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
           >
             <label
-              className="text-white flex justify-center items-center"
+              className="text-white"
               style={{
                 fontSize: "1.5rem",
               }}
             >
-              Enter Pass
+              Enter Password
             </label>
             <input
               placeholder="Password"
-              className=" text-xs lg:text-lg px-4 lg:px-[10px] lg:py-[20px] rounded-lg"
-              // style={{
-              // outline: "none",
-              // fontSize: "16px",
-              // padding: "10px 20px",
-              // borderRadius: "10px",
-              // }}
+              style={{
+                outline: "none",
+                fontSize: "16px",
+                padding: "10px 20px",
+                borderRadius: "10px",
+              }}
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
@@ -205,18 +196,17 @@ const QRPage = () => {
           </span>
 
           <button
-            className="flex justify-center mt-4 md:mt-0 items-center hover:scale-110 hover:text-white duration-300 ease-in-out border-[1px] w-[100px] sm:w-full border-white text-white hover:bg-white hover:text-black rounded-lg px-4 lg:px-[10px] lg:py-[20px]"
             style={{
-              // fontSize: "1.5rem",
-              // padding: "10px 20px",
-              // borderRadius: "10px",
-              backgroundColor: "transparent",
-              // border: "1px solid white",
-              // color: "white",
+              fontSize: "1.5rem",
+              padding: "10px 20px",
+              borderRadius: "10px",
+              //   backgroundColor: "transparent",
+              border: "1px solid white",
+              //   color: "white",
               cursor: "pointer",
               backdropFilter: "blur(10px)",
             }}
-            // className="text-white hover:bg-white hover:text-black"
+            className="text-white hover:bg-white hover:text-black"
             onClick={clickHandler}
           >
             Get Hint

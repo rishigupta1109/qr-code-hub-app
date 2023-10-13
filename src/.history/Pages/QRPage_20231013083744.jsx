@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import image from "../Images/QR.png";
 import { useNavigate, useParams } from "react-router-dom";
 import "./QRPageCSS.css";
@@ -62,11 +62,13 @@ const QRPage = () => {
   const navigate = useNavigate();
   console.log(param);
   const qr = paramToQR[param];
+  useEffect(() => {
   if (qr === undefined) {
     navigate("/");
     console.log(qr);
     return null;
   }
+});
   let set = parseInt(qr[2]);
   let qrNum = parseInt(qr[3]);
   const clickHandler = () => {

@@ -3,14 +3,14 @@ import logotext from ".././Images/InventoTextresp.png";
 
 const Hint = ({ hint, password }) => {
   return (
-    <div className="min-h-screen md:p-16 flex-col pt-6 px-3">
+    <div className="min-h-screen md:p-16 flex-col pt-6">
       <div className="flex justify-center">
         <img src={logotext} className="w-[350px] md:w-auto md:h-auto" />
       </div>
       <div
-        className="flex flex-col gap-6 mt-6 min-h-[60vh] justify-center"
+        className="flex flex-col gap-6 mt-6 h-[100%] w-[100%] px-2"
         style={{
-          // height: "100%",
+          height: "100%",
           width: "100%",
           borderRadius: "20px",
           padding: "2rem",

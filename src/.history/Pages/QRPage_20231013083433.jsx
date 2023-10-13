@@ -65,7 +65,7 @@ const QRPage = () => {
   if (qr === undefined) {
     navigate("/");
     console.log(qr);
-    return null;
+    console.log("yes");
   }
   let set = parseInt(qr[2]);
   let qrNum = parseInt(qr[3]);
