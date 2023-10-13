@@ -82,7 +82,7 @@ const QRPage = () => {
       alert("Invalid password");
       return;
     }
-    if (parseInt(teamId) >= 1061 || parseInt(teamId) <= 1000) {
+    if (parseInt(teamId) >= 1060 || parseInt(teamId) < 1000) {
       alert("Invalid Team Id : Does not exist");
       return;
     }
@@ -107,9 +107,8 @@ const QRPage = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <div>
-        <img src={logotext} className="h-[150px]"/>
+        <img src={logotext} className="h-[100px]" />
       </div>
-      <p className="text-white mb-4 md:mb-10 md:text-2xl">PRESENTS</p>
       <div
         style={{
           backgroundColor: "transparent",
@@ -143,7 +142,7 @@ const QRPage = () => {
       <div className="flex flex-col lg:py-6 py-4 justify-center">
         <div className="flex flex-col justify-center gap-4 lg:gap-8 items-center">
           <span
-            className="sm: lg:w-full flex justify-between lg:gap-12 gap-2 px-4"
+            className="w-full flex justify-between lg:gap-12 gap-10 px-4"
             // style={{
             // width: "100%",
             // display: "flex",
@@ -151,16 +150,11 @@ const QRPage = () => {
             // gap: "3rem",
             // }}
           >
-            <label
-              className="text-white flex items-center justify-center"
-              style={{
-                fontSize: "1.5rem",
-              }}
-            >
+            <label className="text-white lg:text-2xl flex items-center justify-center">
               Enter Team ID
             </label>
             <input
-              className=" text-xs lg:text-lg px-4 lg:px-[10px] lg:py-[20px] rounded-lg"
+              className=" text-xs lg:text-lg px-[10px] py-[10px] rounded-lg"
               // style={{
               // outline: "none",
               // fontSize: "16px",
@@ -174,24 +168,19 @@ const QRPage = () => {
             />
           </span>
           <span
-            className="lg:w-full flex justify-between lg:gap-12 gap-10 px-4"
+            className="w-full flex justify-between lg:gap-12 gap-10 px-4"
             // style={{
             // width: "100%",
             // display: "flex",
             // justifyContent: "space-between",
             // }}
           >
-            <label
-              className="text-white flex justify-center items-center"
-              style={{
-                fontSize: "1.5rem",
-              }}
-            >
+            <label className="text-white flex lg:text-2xl justify-center items-center">
               Enter Pass
             </label>
             <input
               placeholder="Password"
-              className=" text-xs lg:text-lg px-4 lg:px-[10px] lg:py-[20px] rounded-lg"
+              className=" text-xs lg:text-lg px-[10px] py-[10px] rounded-lg"
               // style={{
               // outline: "none",
               // fontSize: "16px",
