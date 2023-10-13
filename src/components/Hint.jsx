@@ -5,10 +5,10 @@ const Hint = ({ hint, password }) => {
   return (
     <div className="min-h-screen md:p-16 flex-col pt-6 px-3">
       <div className="flex justify-center">
-        <img src={logotext} className="w-[350px] md:w-auto md:h-auto" />
+        <img src={logotext} className="w-[300px] " />
       </div>
       <div
-        className="flex flex-col gap-6 mt-6 min-h-[60vh] justify-center"
+        className="flex flex-col gap-6 mt-6 min-h-[60vh] justify-start"
         style={{
           // height: "100%",
           width: "100%",
@@ -19,55 +19,40 @@ const Hint = ({ hint, password }) => {
           backdropFilter: "blur(10px)",
         }}
       >
-        <div className="flex flex-row justify-start items-center gap-4">
-        <h1
-          className="font-bold text-white md:text-5xl text-2xl flex"
-          // style={{
+        <div className="flex flex-col justify-start items-center gap-4">
+          <h1
+            className="font-bold text-white md:text-2xl text-2xl flex"
+            // style={{
             // fontSize: "2rem",
             // fontWeight: "bold",
             // color: "white",
             // textAlign: "center",
-          // }}
-        >
-          Hint :
-        </h1>
-        <p
-          style={{
-            fontSize: "1.5rem",
-            color: "white",
-            textAlign: "center",
-          }}
-        >
-          {hint}
-        </p>
-        </div>
-        <div className="flex-row">
-        <p
-          style={{
-            marginTop: "auto",
-          }}
-        >
-          <span
-            className="font-bold text-white md:text-5xl text-2xl flex"
-            // style={{
-              // fontSize: "2rem",
-              // color: "white",
-              // textAlign: "center",
-              // fontWeight: "bold",
             // }}
           >
-            Password for next QR :{" "}
-          </span>
-          <span
-            style={{
-              fontSize: "1.5rem",
-              color: "white",
-              textAlign: "center",
-            }}
-          >
-            {password}
-          </span>
-        </p>
+            Hint
+          </h1>
+          <p className="text-xl text-white">{hint}</p>
+        </div>
+        <div className="flex-row justify-center items-center text-center">
+          {password != "-1" && (
+            <p
+              style={{
+                marginTop: "auto",
+              }}
+            >
+              <span
+                className="font-bold text-white md:text-2xl text-2xl flex"
+                // style={{
+                // fontSize: "2rem",
+                // color: "white",
+                // textAlign: "center",
+                // fontWeight: "bold",
+                // }}
+              >
+                Password for next QR Code is {password}
+              </span>
+            </p>
+          )}
         </div>
       </div>
     </div>
