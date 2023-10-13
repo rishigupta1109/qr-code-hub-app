@@ -6,12 +6,12 @@ import Hint from "../components/Hint";
 import logotext from ".././Images/InventoTextresp.png";
 //put passwords here passwords[set][qrNum]
 const passwords = [
-  ["111111", "222222", "333333", "444444", "-1"],
-  ["123456", "234567", "345678", "456789", "-1"],
-  ["111111", "222222", "333333", "444444", "-1"],
-  ["123456", "234567", "345678", "456789", "-1"],
-  ["111111", "222222", "333333", "444444", "-1"],
-  ["123456", "234567", "345678", "456789", "-1"],
+  ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
+  ["123456", "234567", "345678", "456789", "555555", "666666", "-1"],
+  ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
+  ["123456", "234567", "345678", "456789", "555555", "666666", "-1"],
+  ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
+  ["123456", "234567", "345678", "456789", "555555", "666666", "-1"],
 ];
 
 let paramToQR = {
@@ -19,40 +19,176 @@ let paramToQR = {
   "5cc24317-20d4-4ff5-98ef-7ea15380cf9a": "QR01",
   "50628dd9-106d-4c86-93b0-48331987277c": "QR02",
   "97edc1e0-080a-4961-90c5-2a7b9610d2d4": "QR03",
+  "c7d36d4d-4a61-43a0-8b54-5d3b121cf9d1": "QR04",
+  "9a45dbbd-2f02-432b-81a9-1e9d7992aa1a": "QR05",
   "d28d741b-597d-47e3-af50-19ec72a9a5e4": "QR10",
   "a5d0a170-ae29-44b7-96a5-31cd8eb5ff6b": "QR11",
   "e8e33f62-9e11-42c2-8a70-3e6c0d7b62f7": "QR12",
   "80d15d5e-2d8b-4a08-8f45-3d877b23f773": "QR13",
+  "6a3d470b-77f6-47f2-a918-7e6ff98473c0": "QR14",
+  "3d0bc53f-080b-4a93-9a6e-39f3bbd28f8e": "QR15",
   "bbd0be9a-6d2a-4e59-9454-3a52b5b250fb": "QR20",
   "7c5d914b-e3dd-496a-ba5d-f0f44e350a41": "QR21",
   "3c3c8f2b-0f36-4dcd-842c-74861419d6f7": "QR22",
   "1bdef48f-295d-4ef3-8f97-9a4a0e146fb0": "QR23",
+  "1e9a70c6-9e08-49a6-aa45-8cb58d7255ab": "QR24",
+  "4b9f6c52-453b-4f0a-b8d4-55f732ec748e": "QR25",
   "2b0a9689-e977-4ae3-8c20-07b0fbcbb72b": "QR30",
   "d870c9c0-6637-4c1c-8c9d-df7bdeab1717": "QR31",
   "d67b41d3-9530-4c76-b090-b95cf6d3ea75": "QR32",
   "1b36d172-b80f-4597-bd33-c4f65e4f8fbd": "QR33",
+  "8e5a7eb4-7213-4f16-ae5d-369e9e0f98ac": "QR34",
+  "5c5e3a17-6f32-453d-a1bc-3e0b41d2e95f": "QR35",
   "c70c74a2-408f-4bcb-bfa4-37e4e272f8e5": "QR40",
   "3a79deac-b4e7-4522-8a3b-7e48e200f6c2": "QR41",
   "eca04f80-7734-45ec-a33e-1bbf51f5da17": "QR42",
   "79e9c786-367d-4d1a-976a-7b75a525da1f": "QR43",
+  "2b4a1f90-0b16-48a8-9c2e-6c1b7081df5d": "QR44",
+  "7c8b44a9-7d06-4b90-84a5-9f7f36d22561": "QR45",
   "1830d29c-1b5c-4b15-a6c3-1e1aaf50652c": "QR50",
   "94b268d7-0652-483d-bc56-7ee90e0f5d8f": "QR51",
   "0d525a21-e9d7-4a4b-8f28-e3e9f03ffac6": "QR52",
   "e1253c1c-c287-4d96-b32a-979ea7610e1c": "QR53",
+  "0f6e4d31-9e82-4f7a-8aeb-2a5d18d47e8c": "QR54",
+  "3a2f14e9-7b43-4db1-9dc2-6e9e55a8b9c1": "QR55",
 };
 //put hints here
 const hints = [
-  ["loreum", "ipsum", "dolor", "Congrats"],
-  ["loreum", "ipsum", "dolor", "Congrats"],
-  ["loreum", "ipsum", "dolor", "Congrats"],
-  ["loreum", "ipsum", "dolor", "Congrats"],
-  ["loreum", "ipsum", "dolor", "Congrats"],
   [
-    "loreum",
+    `P $ Q means P is the brother of Q,
+  P # Q means P is the mother of Q,
+  P * Q means P is the daughter of Q.
+  If the code of family is A # B $ C * D, who is the father in them?
+  
+  D
+  B
+  C
+  A
+  
+  Once you're there,
+  Slip your notes inside my secret slot,
+  Ideas and suggestions, I've got the lot.
+  What am I?`,
+    "Find me near the pond...",
+    `Five friends – Alice, Bob, Carol, David, and Emily – participated in a quiz competition. Each friend wore a different color shirt – Red, Blue, Green, Yellow, and Orange. They also had different scores – 80, 85, 90, 95, and 100.
+
+    1.  Alice didn’t wear a Yellow shirt.
+    2.  Bob scored 90 points.
+    3.  Carol wore a Green shirt.
+    4.  David scored 5 points less than Emily.
+    5.  The person who wore the Red shirt scored 85 points.
+    6.  Alice scored 10 points less than Bob.
+    7.  Emily wore a Blue shirt.
+    
+    Question:
+    Which friend wore the Orange shirt?
+    
+    Options:
+    A) Alice  
+    B) Bob  
+    C) Carol  
+    D) David  
+    E) Emily  
+    F) The answer cannot be determined from the given information.
+    
+    Once you're there,
+    Trust your ears and follow the Beep...`,
+    "..-. .. ..-. - .... / ... - .- - .",
+    "Go to Backstage",
+    "Congrats",
+  ],
+  [
+    `If M is unavailable, I am the closest block to the backstage.
+
+  Once you are there,
+  ""Agli hint hai waha, paani ka doctor hai jaha!""`,
+    "01000010 00100000 01110000 01100001 01110010 01101011 01101001 01101110 01100111",
+    `""Five friends – Alice, Bob, Carol, David, and Emily – participated in a quiz competition. Each friend wore a different color shirt – Red, Blue, Green, Yellow, and Orange. They also had different scores – 80, 85, 90, 95, and 100.
+
+    1.  Alice didn’t wear a Yellow shirt.
+    2.  Bob scored 90 points.
+    3.  Carol wore a Green shirt.
+    4.  David scored 5 points less than Emily.
+    5.  The person who wore the Red shirt scored 85 points.
+    6.  Alice scored 10 points less than Bob.
+    7.  Emily wore a Blue shirt.
+    
+    Question:
+    Which friend wore the Orange shirt?
+    
+    Options:
+    A) Alice  
+    B) Bob  
+    C) Carol  
+    D) David  
+    E) The answer cannot be determined from the given information.  
+    
+    Once you're there,
+    Search for the warmth, when you cross the stairs...""`,
+    "img",
+    "Go to Backstage",
+    "Congrats",
+  ],
+  [
+    `""“Where innovation sparks and ideas ignite,
+  In this place, entrepreneurs take their flight.
+  Look for the hub of startup’s grace,
+  To find the next QR code in this chase.""""`,
+    `"01000001 00100000 01000010 01101100 01101111 01100011 01101011 00100000 01000110 01100001 01100011 01110101 01101100 01110100 01111001 00100000 01010000 01100001 01110010 01101011 01101001 01101110 01100111
+
+    +
+    
+    <Image>"`,
+    `"Five siblings – Alex, Ben, Claire, Daniel, and Emily – are sitting in a row. They each have a different favorite subject – Math, Science, History, English, and Art. They also have different ages – 10, 12, 14, 16, and 18.
+
+    1. Ben is older than Emily but younger than Daniel.
+    2. The person who likes Science is the youngest among them.
+    3. Claire is older than Daniel but younger than the person who likes History.
+    4. Emily is older than Alex but younger than the person who likes Art.
+    5. The person who likes Math is older than the person who likes English but younger than Daniel.
+    6. Alex doesn't like Science or Math.
+    
+    Question:
+    Which sibling likes History, and how old are they?
+    
+    A) Alex, 12  
+    B) Ben, 14  
+    C) Claire, 16  
+    D) Daniel, 18  
+    E) Emily, 10  
+    F) The answer cannot be determined from the given information.
+    
+    Once you're there,
+    See through the eyes of Bapu..."`,
+    "..-. .. ..-. - .... / ... - .- - .",
+    "Go to Backstage",
+    "Congrats",
+  ],
+  [
+    `"P $ Q means P is the brother of Q;
+  P # Q means P is the mother of Q;
+  P * Q means P is the daughter of Q
+  If the code of family is A # B $ C * E, who is the father in them?
+  
+  E
+  B
+  C
+  A
+  
+  Once you are there:
+  ""In 2020 i was in every hand,
+  In this place where germs disband.
+  Look for a post with cleansing grace,
+  Beneath it hides the next QR’s trace.”
+  "`,
     "ipsum",
     "dolor",
-    "Congratulations you have completed the QR Hunt",
+    "",
+    "Go to Backstage",
+    "Congrats",
   ],
+  ["loreum", "ipsum", "dolor", "", "Go to Backstage", "Congrats"],
+  ["loreum", "ipsum", "dolor", "", "Go to Backstage", "Congrats"],
 ];
 const QRPage = () => {
   const [teamId, setTeamId] = useState("");
