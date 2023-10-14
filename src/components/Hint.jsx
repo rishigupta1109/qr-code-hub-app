@@ -40,6 +40,7 @@ const Hint = ({ hint, password }) => {
               src={part2}
               style={{
                 height: "300px",
+                objectFit: "contain",
               }}
             />
           )}
