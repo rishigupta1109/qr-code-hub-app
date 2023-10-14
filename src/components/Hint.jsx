@@ -2,6 +2,9 @@ import React from "react";
 import logotext from ".././Images/InventoTextresp.png";
 
 const Hint = ({ hint, password }) => {
+  let part1 = hint.slice(0, hint.indexOf("("));
+  let part2 = hint.slice(hint.indexOf("(") + 1, hint.indexOf(")"));
+  console.log(part1, part2);
   return (
     <div className="min-h-screen md:p-16 flex-col pt-6 px-3">
       <div className="flex justify-center">
@@ -16,7 +19,7 @@ const Hint = ({ hint, password }) => {
           padding: "2rem",
           // minHeight: "50vh",
           background: "transparent",
-          backdropFilter: "blur(10px)",
+          backdropFilter: "blur(20px)",
         }}
       >
         <div className="flex flex-col justify-start items-center gap-4">
@@ -31,7 +34,15 @@ const Hint = ({ hint, password }) => {
           >
             Hint
           </h1>
-          <p className="text-xl text-white">{hint}</p>
+          <p className="text-xl text-white">{part1}</p>
+          {part2?.length !== 0 && part2.includes("http") && (
+            <img
+              src={part2}
+              style={{
+                height: "300px",
+              }}
+            />
+          )}
         </div>
         <div className="flex-row justify-center items-center text-center">
           {password != "-1" && (

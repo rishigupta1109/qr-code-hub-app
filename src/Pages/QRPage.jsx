@@ -7,11 +7,11 @@ import logotext from ".././Images/InventoTextresp.png";
 //put passwords here passwords[set][qrNum]
 const passwords = [
   ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
-  ["123456", "234567", "345678", "456789", "555555", "666666", "-1"],
   ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
-  ["123456", "234567", "345678", "456789", "555555", "666666", "-1"],
   ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
-  ["123456", "234567", "345678", "456789", "555555", "666666", "-1"],
+  ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
+  ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
+  ["111111", "222222", "333333", "444444", "555555", "666666", "-1"],
 ];
 
 let paramToQR = {
@@ -59,7 +59,7 @@ const hints = [
   P # Q means P is the mother of Q,
   P * Q means P is the daughter of Q.
   If the code of family is A # B $ C * D, who is the father in them?
-  
+   
   D
   B
   C
@@ -94,13 +94,12 @@ const hints = [
     Once you're there,
     Trust your ears and follow the Beep...`,
     "..-. .. ..-. - .... / ... - .- - .",
-    "Go to Backstage",
-    "Congrats",
+    "आरम्भः अन्त्यः",
+    "Congratulations! Yiu have completed the Quest. Have a redbull because redbull gives you wingggggs",
   ],
   [
     `If M is unavailable, I am the closest block to the backstage.
-
-  Once you are there,
+   Once you are there,
   ""Agli hint hai waha, paani ka doctor hai jaha!""`,
     "01000010 00100000 01110000 01100001 01110010 01101011 01101001 01101110 01100111",
     `""Five friends – Alice, Bob, Carol, David, and Emily – participated in a quiz competition. Each friend wore a different color shirt – Red, Blue, Green, Yellow, and Orange. They also had different scores – 80, 85, 90, 95, and 100.
@@ -125,9 +124,9 @@ const hints = [
     
     Once you're there,
     Search for the warmth, when you cross the stairs...""`,
-    "img",
-    "Go to Backstage",
-    "Congrats",
+    "(https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%201.11.55%20PM.jpeg?updatedAt=1697269415909)",
+    "आरम्भः अन्त्यः",
+    "Congratulations! Yiu have completed the Quest. Have a redbull because redbull gives you wingggggs",
   ],
   [
     `""“Where innovation sparks and ideas ignite,
@@ -135,10 +134,8 @@ const hints = [
   Look for the hub of startup’s grace,
   To find the next QR code in this chase.""""`,
     `"01000001 00100000 01000010 01101100 01101111 01100011 01101011 00100000 01000110 01100001 01100011 01110101 01101100 01110100 01111001 00100000 01010000 01100001 01110010 01101011 01101001 01101110 01100111
-
-    +
-    
-    <Image>"`,
+    (https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%2010.30.30%20AM.jpeg?updatedAt=1697268513976)
+    `,
     `"Five siblings – Alex, Ben, Claire, Daniel, and Emily – are sitting in a row. They each have a different favorite subject – Math, Science, History, English, and Art. They also have different ages – 10, 12, 14, 16, and 18.
 
     1. Ben is older than Emily but younger than Daniel.
@@ -161,34 +158,119 @@ const hints = [
     Once you're there,
     See through the eyes of Bapu..."`,
     "..-. .. ..-. - .... / ... - .- - .",
-    "Go to Backstage",
-    "Congrats",
+    "आरम्भः अन्त्यः",
+    "Congratulations! Yiu have completed the Quest. Have a redbull because redbull gives you wingggggs",
   ],
   [
     `"P $ Q means P is the brother of Q;
-  P # Q means P is the mother of Q;
-  P * Q means P is the daughter of Q
-  If the code of family is A # B $ C * E, who is the father in them?
-  
-  E
-  B
-  C
-  A
-  
-  Once you are there:
-  ""In 2020 i was in every hand,
-  In this place where germs disband.
-  Look for a post with cleansing grace,
-  Beneath it hides the next QR’s trace.”
-  "`,
-    "ipsum",
-    "dolor",
-    "",
-    "Go to Backstage",
-    "Congrats",
+    P # Q means P is the mother of Q;
+    P * Q means P is the daughter of Q
+    If the code of family is A # B $ C * E, who is the father in them?
+    
+    E
+    B
+    C
+    A
+    
+    Once you are there:
+    ""In 2020 i was in every hand,
+    In this place where germs disband.
+    Look for a post with cleansing grace,
+    Beneath it hides the next QR’s trace.”
+    "`,
+    "(https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%201.04.30%20PM.jpeg?updatedAt=1697269223098)",
+    "(https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%2010.30.30%20AM%20(1).jpeg?updatedAt=1697269021181)",
+    `1. outside your block, stand in middle square in this image
+
+    2. now face at door
+   
+   3. Reach the  “campus” situated at your left
+   4. Reach the nearest dustbin
+   5. Start moving 350°N 
+   6. Now find me near the cage." (https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%201.12.59%20PM.jpeg?updatedAt=1697270729523)`,
+    "आरम्भः अन्त्यः",
+    "Congratulations! Yiu have completed the Quest. Have a redbull because redbull gives you wingggggs",
   ],
-  ["loreum", "ipsum", "dolor", "", "Go to Backstage", "Congrats"],
-  ["loreum", "ipsum", "dolor", "", "Go to Backstage", "Congrats"],
+  [
+    `"""Read it once, read it twice and if you still don't get the block, read IT thrice""
+
+    Once you are there:
+    Keep an eye out since I'll be on the Anti-Ragging board you need to look for...""`,
+    `"1. Start from the middle of the road in front of Internal Combustion Lab.
+    2. Start moving 340°N.
+    3. Stop in the middle of the second speed-breaker.
+    4. Now move 30°NE until you hit the wall, you'll find me there somewhere..."`,
+    `"In a recent study conducted on environmental conservation efforts, researchers analyzed the impact of various factors on biodiversity in protected areas. The results indicated a strong correlation between the presence of native plant species and the overall biodiversity within these areas. Additionally, the study found that regions with strict conservation policies exhibited a significant increase in the population of endangered animal species.
+
+    Which of the following statements is most likely to be true based on the information provided?
+    
+    A) Conservation efforts have no effect on biodiversity in protected areas.
+    
+    B) Native plant species have a negative impact on overall biodiversity.
+    
+    C) Strict conservation policies lead to a decrease in the population of endangered animal species.
+    
+    D) Presence of native plant species positively influences overall biodiversity, and strict conservation policies contribute to the population growth of endangered animal species.
+    
+    riddle:i"""" POV ,if you are looking at me like that who am i?
+      (https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%201.03.06%20PM.jpeg?updatedAt=1697269223087)
+    "`,
+    `"1. outside your block, stand in middle square in this image
+
+    2. now face at door
+   
+   3. Reach the  “campus” situated at your left
+   4. Reach the nearest dustbin
+   5. Start moving 350°N 
+   6. Now find me near the cage."
+   (https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%201.12.59%20PM.jpeg?updatedAt=1697270729523)
+   `,
+    "आरम्भः अन्त्यः",
+    "Congratulations! Yiu have completed the Quest. Have a redbull because redbull gives you wingggggs",
+  ],
+  [
+    `"
+    22.681330,75.878890
+    
+    Once you are there:
+    
+    ""I'm red and white, but not a candy cane,
+    In case of flames, I'm your best gain.
+    When fires roar and smoke's in the air,
+    Find me nearby, I'm the one to care.
+    What am I?"""`,
+    `"1. Start from the middle of the road in front of Internal Combustion Lab.
+    2. Start moving 340°N.
+    3. Stop in the middle of the second speed-breaker.
+    4.Now look for me on the benches to your left. I will be present."`,
+    `"Five friends – Alice, Bob, Carol, David, and Emily – participated in a quiz competition. Each friend wore a different color shirt – Red, Blue, Green, Yellow, and Orange. They also had different scores – 80, 85, 90, 95, and 100.
+
+    1.  Alice didn’t wear a Yellow shirt.
+    2.  Bob scored 90 points.
+    3.  Carol wore a Green shirt.
+    4.  David scored 5 points less than Emily.
+    5.  The person who wore the Red shirt scored 85 points.
+    6.  Alice scored 10 points less than Bob.
+    7.  Emily wore a Blue shirt.
+    
+    Question:
+    Which friend wore the Orange shirt?
+    
+    Options:
+    A) Alice  
+    B) Bob  
+    C) Carol  
+    D) David  
+    E) The answer cannot be determined from the given information.  
+    
+    riddle:
+    ""image "" POV , if you are looking at me like that who am i?"
+    (https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%201.03.06%20PM.jpeg?updatedAt=1697269223087)
+    `,
+    `(https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%201.11.55%20PM.jpeg?updatedAt=1697269415909)`,
+    "आरम्भः अन्त्यः",
+    "Congratulations! Yiu have completed the Quest. Have a redbull because redbull gives you wingggggs",
+  ],
 ];
 const QRPage = () => {
   const [teamId, setTeamId] = useState("");
@@ -263,17 +345,7 @@ const QRPage = () => {
           // maxWidth: "100%",
           // }}
         />
-        <h1
-          className="text-white text-2xl font-bold text-center"
-          // style={{
-          // color: "white",
-          // fontSize: "2rem",
-          // fontWeight: "bold",
-          // textAlign: "center",
-          // }}
-        >
-          QR Hunt
-        </h1>
+        <h1 className="text-white text-2xl font-bold text-center">QR Hunt</h1>
       </div>
       <div className="flex flex-col lg:py-6 py-4 justify-center">
         <div className="flex flex-col justify-center gap-4 lg:gap-8 items-center">
