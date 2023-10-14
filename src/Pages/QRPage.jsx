@@ -93,7 +93,7 @@ const hints = [
     
     Once you're there,
     Trust your ears and follow the Beep...`,
-    "..-. .. ..-. - .... / ... - .- - .",
+    "..-. .. ..-. - .... / ... - .- - .  ",
     "आरम्भः अन्त्यः",
     "Congratulations! Yiu have completed the Quest. Have a redbull because redbull gives you wingggggs",
   ],
@@ -157,7 +157,7 @@ const hints = [
     
     Once you're there,
     See through the eyes of Bapu..."`,
-    "..-. .. ..-. - .... / ... - .- - .",
+    "..-. .. ..-. - .... / ... - .- - .  ",
     "आरम्भः अन्त्यः",
     "Congratulations! Yiu have completed the Quest. Have a redbull because redbull gives you wingggggs",
   ],
@@ -179,7 +179,7 @@ const hints = [
     Beneath it hides the next QR’s trace.”
     "`,
     "(https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%201.04.30%20PM.jpeg?updatedAt=1697269223098)",
-    "(https://ik.imagekit.io/avy76kxdy/WhatsApp%20Image%202023-10-14%20at%2010.30.30%20AM%20(1).jpeg?updatedAt=1697269021181)",
+    "(https://ik.imagekit.io/avy76kxdy/d.jpeg?updatedAt=1697272969929)",
     `1. outside your block, stand in middle square in this image
 
     2. now face at door
