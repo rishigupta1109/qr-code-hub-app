@@ -218,12 +218,12 @@ const QRPage = () => {
       alert("Invalid password");
       return;
     }
-    if (parseInt(teamId) >= 1060 || parseInt(teamId) < 1000) {
+    if (parseInt(teamId) >= 1072 || parseInt(teamId) < 1000) {
       alert("Invalid Team Id : Does not exist");
       return;
     }
 
-    let idx = Math.floor((parseInt(teamId) % 1000) / 10);
+    let idx = Math.floor((parseInt(teamId) % 1000) / 12);
     if (idx !== set) {
       alert("Invalid Set" + idx + set);
       return;
